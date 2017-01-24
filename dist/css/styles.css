@@ -48,3 +48,11 @@ body {
 .g-menu-block {
   background-color: #eee;
 }
+
+.g-select-list-item {
+  display: inline-block;
+}
+
+.g-select-list-item_mini {
+  width: 75px;
+}

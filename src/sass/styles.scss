@@ -54,3 +54,11 @@ body{
 .g-menu-block{
 	background-color: #eee;
 }
+
+.g-select-list-item{
+	display: inline-block;
+
+	&_mini{
+		width: 75px;
+	}
+}

@@ -1,0 +1,24 @@
+select(name='main-select')
+	option(value='1') Item 1
+	option(value='2') Item 2
+	option(value='3') Item 3
+	option(value='4') Item 4
+
+
+//-.selectbox
+	select.selectbox__select(name='main-select')
+		option(value='1') Item 1
+		option(value='2') Item 2
+		option(value='3') Item 3
+		option(value='4') Item 4
+	.selectbox__element
+		span.selectbox__label Item 1
+		ul.selectbox__list
+			li.selectbox__item
+				span.selectbox__link.selectbox__link_selected(rel='1') Item 1
+			li.selectbox__item
+				span.selectbox__link(rel='2') Item 2
+			li.selectbox__item
+				span.selectbox__link(rel='3') Item 3
+			li.selectbox__item
+				span.selectbox__link(rel='4') Item 4
