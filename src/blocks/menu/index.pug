@@ -1,0 +1,26 @@
+extend /src/jade/templates/layout
+
+block title
+	title Menu example
+
+block append style
+	link(rel='stylesheet', href='menu.css')
+
+block content
+	p: a.g-link.g-link_home(href='/') Home
+	div
+		h4 Inline menu
+		div.g-menu-block
+			include menu
+	div
+		h4 Float menu
+		div.g-menu-block
+			include menu_float
+	div
+		h4 Table menu
+		div.g-menu-block
+			include menu_table
+	div
+		h4 Sub menu
+		div.g-menu-block
+			include sub-menu

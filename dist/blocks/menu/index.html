@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu example</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="menu.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <p><a class="g-link g-link_home" href="/">Home</a></p>
+        <div>
+          <h4>Inline menu</h4>
+          <div class="g-menu-block">
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 3</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>Float menu</h4>
+          <div class="g-menu-block">
+            <ul class="menu menu_type_float">
+              <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 3</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>Table menu</h4>
+          <div class="g-menu-block">
+            <ul class="menu menu_type_table">
+              <li class="menu__item"><a class="menu__link" href="#">Item 1</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 2</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 3</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 5</a></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h4>Sub menu</h4>
+          <div class="g-menu-block">
+            <ul class="menu">
+              <li class="menu__item"> <a class="menu__link" href="#">Item 1</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 2</a>
+                <ul class="menu menu_type_block menu_submenu">
+                  <li class="menu__item"><a class="menu__link" href="#">SubItem 1</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">SubItem 2</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">SubItem 3</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">SubItem 4</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 3</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 4</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Item 5</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+extend /src/jade/templates/layout
+
+block title
+	title Popup example
+
+block append style
+	link(rel='stylesheet', href='popup.css')
+
+block content
+	p: a.g-link.g-link_home(href='/') Home
+	p: a.g-link(href='#', data-popup='popup_one') open popup one
+	p: a.g-link(href='#', data-popup='popup_two') open popup two
+	
+block bottom
+	include popup
+block prepend script
+	script(src='popup.js')

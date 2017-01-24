@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Popup example</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <p><a class="g-link g-link_home" href="/">Home</a></p>
+        <p><a class="g-link" href="#" data-popup="popup_one">open popup one</a></p>
+        <p><a class="g-link" href="#" data-popup="popup_two">open popup two</a></p>
+      </div>
+    </div>
+    <div class="popup-block">
+      <div class="popup popup_one">
+        <div class="popup__header">
+          <p class="popup__title">Popup one</p>
+        </div>
+        <div class="popup__content">
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div><a class="popup__close" href="#"></a>
+      </div>
+      <div class="popup popup_two">
+        <div class="popup__header">
+          <p class="popup__title">Popup two</p>
+        </div>
+        <div class="popup__content">
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="popup__content"><a class="g-link" href="#" data-popup-switch="popup_one">Switch popup two -> one</a></div><a class="popup__close" href="#"></a>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="popup.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
