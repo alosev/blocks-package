@@ -33,36 +33,40 @@ $(document).ready(function() {
 
 function popupOpen(e){
     e.preventDefault();
-    
     var el = $(e.target);
     var popup = el.attr('data-popup');
-    
     $("body").addClass("lock");
 	$(".popup-block").fadeIn("normal",function(){
 		$(".popup-block ." + popup).fadeIn("normal");
 	});
 }
 function popupClose(e){
-    e.preventDefault();
-    
     e = e || null;
 	if( (e == null) || $(e.target).is(".popup-block") || $(e.target).is(".popup__close") ){
+        e.preventDefault();
+
 		$(".popup-block .popup").fadeOut("normal",function(){
 			$(".popup-block").fadeOut("normal",function(){
 				$("body").removeClass("lock");
 			});
 		});
-	}   
+	}
 }
 function popupSwitch(name){
     var popup = $('.' + name);
     if(popup.length > 0){
-        $(".popup-block .popup").fadeOut("normal",function(){
-			$(".popup-block ." + name).fadeIn("normal");
-		});
-        
+        if( $('body').hasClass('lock') ){
+            $(".popup-block .popup:not(." + name + ")").fadeOut("fast",function(){
+                $(".popup-block ." + name).fadeIn("normal");
+            });
+        }
+        else{
+            $("body").addClass("lock");
+            $(".popup-block").fadeIn("normal",function(){
+                $(".popup-block ." + name).fadeIn("normal");
+            });
+        }
         return true;
     }
-    
     return false;
 }
